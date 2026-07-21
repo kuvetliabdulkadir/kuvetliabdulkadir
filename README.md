@@ -55,8 +55,8 @@ visitor@kuvetli:~$ _
 </div>
 
 <!-- ====== SNAKE ====== -->
-<div 
-  align="center"><img src="https://raw.githubusercontent.com/kuvetliabdulkadir/kuvetliabdulkadir/output/github-snake.svg?v=3" alt="snake"/>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/kuvetliabdulkadir/kuvetliabdulkadir/output/github-snake.svg?v=4" alt="snake"/>
 </div>
 
 <!-- ====== LINKS ====== -->
