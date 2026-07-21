@@ -1,23 +1,46 @@
-name: Generate Snake
+name: Generate Snake Animation
+
 on:
   schedule:
+    # Her 12 saatte bir otomatik çalışır
     - cron: "0 */12 * * *"
+  # Manuel tetikleme butonu sağlar
   workflow_dispatch:
+  # Ana dala her push yapıldığında da otomatik güncellenir
+  push:
+    branches:
+      - main
+      - master
 
+# GitHub Pages ve içerik yazma izinleri
 permissions:
   contents: write
 
 jobs:
-  build:
+  generate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
-      - uses: Platane/snk/svg-only@v3
+      # 1. Depoyu klonla (Güvenilir akış için önerilir)
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Farklı tema ve modlarda Snake SVG grafiklerini üret
+      - name: Generate Snake SVGs
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: kuvetliabdulkadir
           outputs: |
-            dist/github-snake.svg?palette=github-dark&color_snake=BA68C8&color_dots=150A24,4A148C,7B1FA2,9C27B0,BA68C8
+            dist/github-snake.svg?palette=github-dark&color_snake=#BA68C8&color_dots=#150A24,#4A148C,#7B1FA2,#9C27B0,#BA68C8
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake-light.svg?palette=github-light
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      # 3. Üretilen dosyaları 'output' dalına yükle (GitHub Pages için)
+      - name: Deploy to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
