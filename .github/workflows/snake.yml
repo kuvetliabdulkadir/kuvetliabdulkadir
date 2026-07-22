@@ -15,8 +15,7 @@ jobs:
         with:
           github_user_name: kuvetliabdulkadir
           outputs: |
-            dist/github-snake.svg?palette=github-dark&color_snake=E11D48&color_dots=161B22,3a3a5a,7a7a9a,b0b0d0,ffffff
-
+            dist/github-snake.svg?palette=github-dark&color_snake=E11D48
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
