@@ -5,20 +5,20 @@
 
 <!-- ====== TERMINAL (animated) ====== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=900&color=BA68C8&center=true&vCenter=true&width=800&lines=%24+whoami+%23+kuvetliabdulkadir;%24+cat+role.txt+%23+Network+%26+Security+//+Full-Stack+Web+Dev;%24+cat+school.txt+%23+MIS+%40+Bursa+Uludag+Univ.;%24+cat+focus.txt+%23+Networking+%C2%B7+Cybersecurity;%24+curl+-I+kuvetliabdulkadir.com+%23+HTTP/2+200+OK" alt="terminal"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=900&color=BA68C8&center=true&vCenter=true&width=800&lines=root%40kuvetli:~%24+whoami+%23+kuvetliabdulkadir;root%40kuvetli:~%24+cat+role.txt+%23+Network+%26+Security+//+Full-Stack+Web+Dev;root%40kuvetli:~%24+cat+school.txt+%23+MIS+%40+Bursa+Uludag+Univ.;root%40kuvetli:~%24+cat+focus.txt+%23+Networking+%C2%B7+Cybersecurity;root%40kuvetli:~%24+curl+-I+kuvetliabdulkadir.com+%23+HTTP/2+200+OK" alt="terminal"/>
 </div>
 
 <!-- ====== TERMINAL (static box) ====== -->
 ```bash
-visitor@kuvetli:~$ ./whoami.sh
+root@kuvetli:~$ ./whoami.sh
 ────────────────────────────────────────────────
   role     : Network & Security // Full-Stack Web Developer
   school   : Bursa Uludag University — MIS
-  now      : studying CCNA  ->  next goal: CCNP
+  now      : Studying CCNA  ->  Next goal: CCNP
   focus    : Networking, Cybersecurity
   website  : kuvetliabdulkadir.com
 ────────────────────────────────────────────────
-visitor@kuvetli:~$ _
+root@kuvetli:~$ _
 ```
 
 <!-- ====== TECH STACK ====== -->
